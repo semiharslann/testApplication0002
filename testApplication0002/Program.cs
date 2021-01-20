@@ -7,73 +7,56 @@ namespace testApplication0002
     {
         static void Main(string[] args)
         {
-            //byte sayi1;
-            //Console.WriteLine("Lütfen 0-9 arası bir sayı giriniz:");
-            //sayi1 = Convert.ToByte(Console.ReadLine());
-            //switch (sayi1)
-            //{
-            //    case 0: Console.WriteLine("SIFIR"); break;
-            //    case 1: Console.WriteLine("BIR"); break;
-            //    case 2: Console.WriteLine("IKI"); break;
-            //    case 3: Console.WriteLine("UC"); break;
-            //    case 4: Console.WriteLine("DORT"); break;
-            //    case 5: Console.WriteLine("BES"); break;
-            //    case 6: Console.WriteLine("ALTI"); break;
-            //    case 7: Console.WriteLine("YEDI"); break;
-            //    case 8: Console.WriteLine("SEKIZ"); break;
-            //    case 9: Console.WriteLine("DOKUZ"); break;
-            //    default:Console.WriteLine("Lütfen 0-9 arası girin!"); break; 
-            //}
 
-            //char cevap;
-            //Console.ForegroundColor = ConsoleColor.Cyan;
-            //Console.WriteLine("Merhaba kelimesinin hangi dilde yazılmak istediğini seçin:");
-            //Console.ForegroundColor = ConsoleColor.Red;
-            //Console.WriteLine("İngilizce için 1\nAlmanca için 2\nİtalyanca için 3\nİspanyolca için 4 yazınız.");
-            //Console.ForegroundColor = ConsoleColor.Cyan;
-            //Console.Write("Seçiminiz = ");
-            //cevap = Convert.ToChar(Console.ReadLine());
-            //Console.ForegroundColor = ConsoleColor.Green;
-            //switch (cevap)
-            //{
-            //    case '1': Console.WriteLine("Result =" + "Hi"); break;
-            //    case '2': Console.WriteLine("Ergebnis = Hallo"); break;
-            //    case '3': Console.WriteLine("Risultato = Ciao"); break;
-            //    case '4': Console.WriteLine("Resultado = Hola"); break;
-            //    default: Console.WriteLine("Lütfen belirtilen sayılardan birini giriniz!"); break;
-            //}
-            //Console.WriteLine(" ");
+            char cevap;
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Merhaba kelimesinin hangi dilde yazılmak istediğini seçin:");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("İngilizce için 1\nAlmanca için 2\nİtalyanca için 3\nİspanyolca için 4 yazınız.");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write("Seçiminiz = ");
+            cevap = Convert.ToChar(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.Green;
+            switch (cevap)
+            {
+                case '1': Console.WriteLine("Result =" + "Hi"); break;
+                case '2': Console.WriteLine("Ergebnis = Hallo"); break;
+                case '3': Console.WriteLine("Risultato = Ciao"); break;
+                case '4': Console.WriteLine("Resultado = Hola"); break;
+                default: Console.WriteLine("Lütfen belirtilen sayılardan birini giriniz!"); break;
+            }
+            Console.WriteLine(" ");
 
-            //char secim;
-            //int sayi1;
-            //Console.Write("Lütfen bir sayı girin: ");
-            //sayi1 = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("Lütfen yapmak istediğiniz işlemi seçin:");
-            //Console.WriteLine("Sayının karesi için 1\nSayının kübü için 2\nSayının karekökü için 3  yazınız.");
-            //Console.Write("Seçiminiz: ");
-            //secim = Convert.ToChar(Console.ReadLine());
-            //switch (secim)
-            //{
-            //    case '1': Console.WriteLine("Karesi = " + (sayi1 * sayi1)); break;
-            //    case '2': Console.WriteLine("Kübü = " + (sayi1 * sayi1 * sayi1)); break;
-            //    case '3': Console.WriteLine("Karekökü = " + Math.Sqrt(sayi1)); break;
-            //}
+            char secim;
+            int sayi1;
+            Console.Write("Lütfen bir sayı girin: ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Lütfen yapmak istediğiniz işlemi seçin:");
+            Console.WriteLine("Sayının karesi için 1\nSayının kübü için 2\nSayının karekökü için 3  yazınız.");
+            Console.Write("Seçiminiz: ");
+            secim = Convert.ToChar(Console.ReadLine());
+            switch (secim)
+            {
+                case '1': Console.WriteLine("Karesi = " + (sayi1 * sayi1)); break;
+                case '2': Console.WriteLine("Kübü = " + (sayi1 * sayi1 * sayi1)); break;
+                case '3': Console.WriteLine("Karekökü = " + Math.Sqrt(sayi1)); break;
+            }
 
-            //byte ay;
-            //ay = Convert.ToByte(DateTime.Today.Month);
-            //switch (ay)
-            //{
-            //    case 12:
-            //    case 1:
-            //    case 2: Console.WriteLine("Kış"); break;
-            //    case 3: 
-            //    case 4:
-            //    case 5: Console.WriteLine("İlkbahar"); break;
-            //    case 6: 
-            //    case 7: 
-            //    case 8: Console.WriteLine("Yaz"); break;
-            //    default: Console.WriteLine("SONBAHAR"); break; 
-            //}
+            byte ay;
+            ay = Convert.ToByte(DateTime.Today.Month);
+            switch (ay)
+            {
+                case 12:
+                case 1:
+                case 2: Console.WriteLine("Kış"); break;
+                case 3: 
+                case 4:
+                case 5: Console.WriteLine("İlkbahar"); break;
+                case 6: 
+                case 7: 
+                case 8: Console.WriteLine("Yaz"); break;
+                default: Console.WriteLine("SONBAHAR"); break; 
+            }
 
             int adet, oran;
             double fiyat, toplam, kdv, kdvtoplam;
