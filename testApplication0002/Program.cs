@@ -32,13 +32,13 @@ namespace testApplication0002
             Console.Write("Lütfen bir sayı girin: ");
             sayi1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Lütfen yapmak istediğiniz işlemi seçin:");
-            Console.WriteLine("Sayının karesi için 1\nSayının kübü için 2\nSayının karekökü için 3  yazınız.");
+            Console.WriteLine("Sayının karesi için 1\nSayının küpü için 2\nSayının karekökü için 3  yazınız.");
             Console.Write("Seçiminiz: ");
             secim = Convert.ToChar(Console.ReadLine());
             switch (secim)
             {
                 case '1': Console.WriteLine("Karesi = " + (sayi1 * sayi1)); break;
-                case '2': Console.WriteLine("Kübü = " + (sayi1 * sayi1 * sayi1)); break;
+                case '2': Console.WriteLine("Küpü = " + (sayi1 * sayi1 * sayi1)); break;
                 case '3': Console.WriteLine("Karekökü = " + Math.Sqrt(sayi1)); break;
             }
 
